@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Demo Gallery</title>
+  </head>
+  <body class="container " style="padding-top: 5%;">
+
+    <img src="{% static 'req_img.jpg' %}" alt="My image">
+    <div>
+      <p>{{ mood }}</p>
+    </div>
+
+    <div class="row">
+        {% for song in songs %}
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <p>{{ song.name }}</p>
+            <p>{{ song.id }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+  </body>
+</html>

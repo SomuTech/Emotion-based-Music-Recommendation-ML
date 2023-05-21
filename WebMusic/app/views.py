@@ -84,12 +84,6 @@ def index(request):
                     gray = cv2.cvtColor(roi_color, cv2.COLOR_BGR2GRAY)
                     img_ = cv2.resize(gray,(48,48))
                     cv2.imwrite('static/req_img.jpg', img_)
-            
-                    # image = cv2.imread('required_img.jpg',cv2.IMREAD_GRAYSCALE)
-
-                    # plt.imshow(img_,cmap='gray')
-                    # plt.show()
-                    
                     image = cv2.resize(img_,(48,48))
                     img=np.array(image)
                     img=img.reshape(1,48,48,1)

@@ -28,6 +28,10 @@ The  emotions  which  are  extracted  for the  songs  are stored, and thesongs b
 ## Result
 ![image](https://github.com/SomuTech/Emotion-based-Music-Recommendation-ML/assets/77001358/2126c9e3-cf5a-4866-a960-a648126685be)
 
+## Video
+https://youtu.be/LovDYBhr888?si=NSV0OvSEeEvGKl0d
+
+
 
 
 
